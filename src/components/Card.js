@@ -1,16 +1,16 @@
 import React from 'react';
-const todoTitle = "call family";
-const todoSpace = "Dummy text";
+
 const date = new Date();
 const dateName = date.getDate();
 const monthName = date.getMonth();
 const currentyear = date.getYear();
 
 
-function Card () {
+function Card (props) {
+    const {titleText,descText} = props;
     return <div className = 'card'>
-    <h3 className='cardTitle'>{todoTitle}</h3>
-    <p className= 'cardDesc'>{todoSpace}</p>
+    <h3 className='cardTitle'>{titleText}</h3>
+    <p className= 'cardDesc'>{descText}</p>
     <p className = 'cardFooter'>{dateName + "/" + monthName + "/" + currentyear}</p>
     </div>
 

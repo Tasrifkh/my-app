@@ -3,9 +3,11 @@ import Card from './Card';
 
 function App() {
     return <div>
-        <Card />
-        <Card />
-        <Card />
+<h1 className = "headingStyle">Todo App</h1>
+        
+        <Card titleText="hello" descText = "hi"  />
+        <Card titleText="hello2" descText = "hi2"  />
+        <Card titleText="hello3" descText = "hi3"  />
         
     </div>
 
