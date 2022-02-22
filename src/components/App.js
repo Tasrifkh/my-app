@@ -1,10 +1,15 @@
 import React from "react";
+
+//card 1 and 2
 import Card1 from "./Card1";
 import Card2 from "./Card2";
+
 // import Card from './Card';
 // import Data from '../Data.json'
 
 function App() {
+
+    //.Card data load...
   
     // let items = [];
     // items = Data.map((item,index) => <Card key = {index} titleText={item.title} descText = {item.desc} />);
@@ -15,8 +20,8 @@ function App() {
       
      <Card1 name="Hello" desc = "Test"/>
      <Card2 name="Hello" desc = "Test"/>
-
-     {/* <h1 className = "headingStyle">Todo App</h1>
+      {/* Card data load */}
+     {/* <h1 className = "headingStyle">Todo App</h1> 
       {items} */}
     </div>
 
