@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './style1.css'
 
 export default class STATE extends Component {
   constructor(props) {
@@ -14,6 +15,12 @@ export default class STATE extends Component {
           count : this.state.count + 1
       })
   }
+
+  handleDecrment = () =>  {
+    this.setState ({
+        count : this.state.count - 1
+        })
+     }
   
     render() {
 
@@ -23,6 +30,7 @@ export default class STATE extends Component {
             <div>
                 <h1> Count : {count}</h1>
                 <button onClick={this.handleIncrement}>+</button>
+                <button onClick={this.handleDecrment} disabled={count===0 ?  true : false}>-</button>
            
             </div>
             )
